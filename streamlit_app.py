@@ -7,15 +7,8 @@ import pandas as pd
 import streamlit as st
 
 # Show app title and description.
-st.set_page_config(page_title="Support tickets", page_icon="🎫")
-st.title("🎫 Support tickets")
-st.write(
-    """
-    This app shows how you can build an internal tool in Streamlit. Here, we are 
-    implementing a support ticket workflow. The user can create a ticket, edit 
-    existing tickets, and view some statistics.
-    """
-)
+st.set_page_config(page_title="UCNS Support tickets", page_icon="🎫")
+st.title("🎫 UCNS Support tickets")
 
 # Create a random Pandas dataframe with existing tickets.
 if "df" not in st.session_state:
@@ -44,7 +37,7 @@ if "df" not in st.session_state:
         "Intrusion detection system alerts",
         "Inventory management system errors",
         "Customer data not loading in CRM",
-        "Collaboration tool not sending notifications",
+        "Collaboration tool not sending notifications ",
     ]
 
     # Generate the dataframe with 100 rows/tickets.
